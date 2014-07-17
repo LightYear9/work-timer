@@ -1,0 +1,48 @@
+/* Empty. Add your own CSS if you like */
+p{
+    left:50%;
+    float:center;
+}
+
+span
+{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+
+.divmain, .scroll
+{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+
+.tileitem
+{
+    display:block;
+    width:50%;
+    float:left;
+    text-align:center;
+}
+
+.selected
+{
+    display:block;
+    width:50%;
+    background-color:green;
+    float:left;
+    text-align:center;
+}
+
+.notselected
+{
+    width:50%;
+    display:block;
+    opacity:0.2;
+    float:left;
+    text-align:center;
+}
+
+
+
