@@ -1,0 +1,42 @@
+<ion-pane>
+      <ion-header-bar class="bar-dark">
+        <a class="button" href='#grid'> <i class='ion-chevron-left'></i> </a> 
+        <h1 class="title">Settings</h1>
+      </ion-header-bar>
+      <ion-content class='padding'>
+         <form ng-controller='setTile' class='card'>
+              <label class="item">
+                  <b class='title'> Tile Number </b>
+                  <label class='item-radio'>
+                    <input type="radio" value=4 name="TileNo" ng-model='num' checked >
+                    <button class="button item-content">
+                        4
+                    </button>
+                  </label>
+                  <label class='item-radio'>
+                    <input type="radio" value=8 name="TileNo" ng-model='num' >
+                    <button class="button item-content">
+                        8
+                    </button>
+                  </label>
+              </label>
+         </form>
+         <div class='card'>
+         <b class='title'>Tile Headers</b>
+         <form ng-controller="settingsController">
+              <div class='list list-inset' >
+                <div class='item item-input' ng-repeat='tile in tiles track by $index'>
+                  <label class='item-input'>
+                    <span class='input-label'>Name</span>
+                    <input type='text' value=tile.name ng-model='tile.name'/>
+                  </label>
+                  <label class='item-input'>
+                    <span class='input-label'>Amount per hour</span>
+                    <input type='text' value=tile.amt ng-model='tile.amt'/>
+                  </label>
+                </div>
+              </div> 
+         </form>
+         </div>
+      </ion-content>
+</ion-pane>
